@@ -1,0 +1,15 @@
+import React, { FC } from "react";
+import classes from "./{{dashCase name}}.module.css";
+import { use{{properCase name}} } from "./hooks";
+
+export interface  {{properCase name}}Props {}
+
+const {{properCase name}}: FC<{{properCase name}}Props> = ({}) => {
+  const { value } = use{{properCase name}}();
+
+  return (
+   <div>{ value }</div>
+  );
+};
+
+export default {{properCase name}};
