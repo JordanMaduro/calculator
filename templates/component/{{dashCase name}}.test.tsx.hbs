@@ -1,0 +1,18 @@
+import {{properCase name}} from "./{{dashCase name}}";
+import * as hooks from "./hooks";
+import { render } from "@testing-library/react";
+import React from "react";
+
+describe("{{properCase name}}", () => {
+  it("should render default value", async () => {
+    jest.spyOn(hooks, "use{{properCase name}}").mockImplementation(() => {
+      return {
+        value: "{{properCase name}}",
+      };
+    });
+
+    const { container } = render(<{{properCase name}} />);
+
+    expect(container).toHaveTextContent("{{properCase name}}");
+  });
+});

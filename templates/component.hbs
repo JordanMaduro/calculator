@@ -1,0 +1,11 @@
+import { h, render, Component } from 'preact';
+
+class {{properCase name}} extends Component {
+    render() {
+        let time = new Date().toLocaleTimeString();
+        return <span>{ time }</span>;
+    }
+}
+
+// render an instance of {{properCase name}} into <body>:
+render(<{{properCase name}} />, document.body);

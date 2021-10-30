@@ -1,0 +1,11 @@
+import { renderHook } from "@testing-library/react-hooks";
+import { use{{properCase name}} } from ".";
+
+describe("use{{properCase name}}", () => {
+  describe("value", () => {
+    it("should default to name", () => {
+      const { result } = renderHook(() => use{{properCase name}}());
+      expect(result.current.value).toBe("{{properCase name}}");
+    });
+  });
+});
