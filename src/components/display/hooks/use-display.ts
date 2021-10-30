@@ -1,15 +1,14 @@
 export interface UseDisplayProps {
-  text: string
+  text: string;
 }
 
 export interface UseDisplay {
   value: string;
 }
 
-const useDisplay = ({text = "Display"}): UseDisplay => {
-
+const useDisplay = ({ text = "Display" }): UseDisplay => {
   return {
-    value: text,
+    value: text
   };
 };
 

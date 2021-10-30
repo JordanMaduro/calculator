@@ -7,7 +7,7 @@ describe("Display", () => {
   it("should render default value", async () => {
     jest.spyOn(hooks, "useDisplay").mockImplementation(() => {
       return {
-        value: "1/4",
+        value: "1/4"
       };
     });
 
