@@ -7,12 +7,12 @@ describe("Display", () => {
   it("should render default value", async () => {
     jest.spyOn(hooks, "useDisplay").mockImplementation(() => {
       return {
-        value: "Display",
+        value: "1/4",
       };
     });
 
-    const { container } = render(<Display />);
+    const { container } = render(<Display text={""} />);
 
-    expect(container).toHaveTextContent("Display");
+    expect(container).toHaveTextContent("1/4");
   });
 });

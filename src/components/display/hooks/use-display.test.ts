@@ -4,7 +4,7 @@ import { useDisplay } from ".";
 describe("useDisplay", () => {
   describe("value", () => {
     it("should default to name", () => {
-      const { result } = renderHook(() => useDisplay());
+      const { result } = renderHook(() => useDisplay({}));
       expect(result.current.value).toBe("Display");
     });
   });

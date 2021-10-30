@@ -5,7 +5,7 @@ import { Display } from "./components/display";
 function App() {
   return (
     <div className="bg-white">
-      <Display />
+      <Display text="1+1" />
       <Button type="primary">Button</Button>
     </div>
   );

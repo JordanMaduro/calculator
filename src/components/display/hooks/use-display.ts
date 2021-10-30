@@ -1,13 +1,15 @@
-export interface UseDisplayProps {}
+export interface UseDisplayProps {
+  text: string
+}
 
 export interface UseDisplay {
   value: string;
 }
 
-const useDisplay = (): UseDisplay => {
+const useDisplay = ({text = "Display"}): UseDisplay => {
 
   return {
-    value: "Display",
+    value: text,
   };
 };
 
