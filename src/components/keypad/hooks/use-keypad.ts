@@ -9,7 +9,9 @@ export interface Key {
   type?: KeyTypes;
 }
 
-export interface UseKeypadProps {}
+export interface UseKeypadProps {
+  onInput?: (value: Key) => void;
+}
 
 export interface UseKeypad {
   keys: Key[];
@@ -101,10 +103,12 @@ const simple = [
   }
 ];
 
-const useKeypad = (): UseKeypad => {
+const useKeypad = ({
+  onInput = () => undefined
+}: UseKeypadProps): UseKeypad => {
   return {
     handleClick: (value) => () => {
-      console.log(value);
+      onInput(value);
     },
     keys: simple
   };

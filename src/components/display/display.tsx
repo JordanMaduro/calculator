@@ -9,7 +9,11 @@ export interface DisplayProps {
 const Display: FC<DisplayProps> = ({ text }) => {
   const { value } = useDisplay({ text });
 
-  return <div>{value}</div>;
+  return (
+    <div className="text-right text-2xl">
+      {value === "" ? <>&nbsp;</> : value}
+    </div>
+  );
 };
 
 export default Display;
