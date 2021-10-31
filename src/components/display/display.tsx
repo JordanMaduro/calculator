@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import classes from "./display.module.css";
 import { useDisplay } from "./hooks";
 
 export interface DisplayProps {
@@ -12,10 +11,10 @@ const Display: FC<DisplayProps> = ({ text, subText }) => {
 
   return (
     <div>
-      <div className="text-right text-xl">
+      <div className="text-xl text-right">
         {subValue === "" ? <>&nbsp;</> : subValue}
       </div>
-      <div className="text-right text-2xl">
+      <div className="text-4xl text-right">
         {value === "" ? <>&nbsp;</> : value}
       </div>
     </div>

@@ -8,7 +8,7 @@ export interface UseDisplay {
   subValue: string;
 }
 
-const useDisplay = ({ text = "Display", subText = "" }): UseDisplay => {
+const useDisplay = ({ text = "", subText = "" }): UseDisplay => {
   return {
     value: text,
     subValue: subText
