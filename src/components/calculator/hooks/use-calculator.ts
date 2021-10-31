@@ -5,6 +5,7 @@ export interface UseCalculatorProps {}
 
 export interface UseCalculator {
   value: string;
+  previousValue: string;
   handleInput: (key: Key) => void;
 }
 
@@ -12,6 +13,9 @@ const availableFunctions = {
   "=": (value: string, _?: Key) => evaluate(value),
   AC: (value: string, _?: Key) => {
     return `${value}`.slice(0, -1);
+  },
+  C: (_: string, __?: Key) => {
+    return "";
   }
 };
 
@@ -37,12 +41,17 @@ const processInput = (currentValue: any, key: Key): string | null => {
 
 const useCalculator = (): UseCalculator => {
   const [currentValue, setCurrentValue] = useState("");
+  const [previousValue, setPreviousValue] = useState("");
 
   return {
+    previousValue,
     value: currentValue,
     handleInput: (key) => {
       try {
         const nextValue = processInput(currentValue, key);
+        if (key.value === "=" && nextValue) {
+          setPreviousValue(currentValue);
+        }
         if (nextValue !== null) {
           setCurrentValue(nextValue);
         }

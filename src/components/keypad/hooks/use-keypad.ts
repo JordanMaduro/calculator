@@ -20,6 +20,11 @@ export interface UseKeypad {
 
 const simple = [
   {
+    value: "C",
+    label: "C",
+    type: KeyTypes.FUNCTION
+  },
+  {
     value: "(",
     label: "("
   },
@@ -31,11 +36,7 @@ const simple = [
     value: "%",
     label: "%"
   },
-  {
-    value: "AC",
-    label: "AC",
-    type: KeyTypes.FUNCTION
-  },
+
   {
     value: "7",
     label: "7"
@@ -92,14 +93,20 @@ const simple = [
     value: ".",
     label: "."
   },
+
+  {
+    value: "+",
+    label: "+"
+  },
   {
     value: "=",
     label: "=",
     type: KeyTypes.FUNCTION
   },
   {
-    value: "+",
-    label: "+"
+    value: "AC",
+    label: "AC",
+    type: KeyTypes.FUNCTION
   }
 ];
 

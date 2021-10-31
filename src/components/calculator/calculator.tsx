@@ -7,11 +7,11 @@ import { useCalculator } from "./hooks";
 export interface CalculatorProps {}
 
 const Calculator: FC<CalculatorProps> = ({}) => {
-  const { value, handleInput } = useCalculator();
-
+  const { value, previousValue, handleInput } = useCalculator();
+  console.log(previousValue);
   return (
     <div className="bg-white max-w-md">
-      <Display text={value} />
+      <Display text={value} subText={previousValue} />
       <Keypad onInput={handleInput} />
     </div>
   );
