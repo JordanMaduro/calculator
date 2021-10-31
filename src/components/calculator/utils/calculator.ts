@@ -21,7 +21,7 @@ export const isAvailableFunction = (func: string) =>
 
 export const isFunctionKey = (key: Key) => key.type === KeyTypes.FUNCTION;
 
-export const processInput = (currentValue: any, key: Key): string | null => {
+export const processInput = (currentValue: string, key: Key): string | null => {
   if (isFunctionKey(key)) {
     if (isAvailableFunction(key.value)) {
       return availableFunctions[key.value as keyof typeof availableFunctions](

@@ -10,7 +10,7 @@ const Display: FC<DisplayProps> = ({ text, subText }) => {
   const { value, subValue } = useDisplay({ text, subText });
 
   return (
-    <div>
+    <div className="p-4 border-b">
       <div className="text-xl text-right">
         {subValue === "" ? <>&nbsp;</> : subValue}
       </div>

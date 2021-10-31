@@ -7,7 +7,7 @@ const Calculator: FC = () => {
   const { value, previousValue, handleInput } = useCalculator();
 
   return (
-    <div className="max-w-md bg-white">
+    <div className="bg-white border shadow-lg">
       <Display text={value} subText={previousValue} />
       <Keypad onInput={handleInput} />
     </div>
