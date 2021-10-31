@@ -3,7 +3,7 @@ import { Calculator } from "./components/calculator";
 
 function App() {
   return (
-    <div className="flex justify-center mt-8">
+    <div className="flex bg-gray-100 h-screen justify-center pt-8">
       <div className="w-64">
         <Calculator />
       </div>
