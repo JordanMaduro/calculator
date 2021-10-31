@@ -1,4 +1,3 @@
-import { Button } from "antd";
 import React, { FC } from "react";
 import { useKeypad } from "./hooks";
 import { UseKeypadProps } from "./hooks/use-keypad";
@@ -15,9 +14,13 @@ const Keypad: FC<KeypadProps> = ({ onInput }) => {
   return (
     <div className="grid grid-cols-4">
       {keys.map((key) => (
-        <Button key={key.value} onClick={handleClick(key)}>
+        <div
+          className=" p-2 text-2xl text-center shadow-sm active:shadow cursor-pointer select-none"
+          key={key.value}
+          onClick={handleClick(key)}
+        >
           {key.label}
-        </Button>
+        </div>
       ))}
     </div>
   );
