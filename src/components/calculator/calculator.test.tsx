@@ -8,12 +8,14 @@ describe("Calculator", () => {
     jest.spyOn(hooks, "useCalculator").mockImplementation(() => {
       return {
         handleInput: jest.fn(),
-        value: "Calculator"
+        value: "Calculator",
+        previousValue: "Sub"
       };
     });
 
     const { container } = render(<Calculator />);
 
     expect(container).toHaveTextContent("Calculator");
+    expect(container).toHaveTextContent("Sub");
   });
 });
