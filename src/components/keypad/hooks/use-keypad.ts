@@ -1,3 +1,5 @@
+import { useKeyPress } from "ahooks";
+
 export enum KeyTypes {
   EXPRESSION = "EXPRESSION",
   FUNCTION = "FUNCTION"
@@ -7,6 +9,7 @@ export interface Key {
   value: string;
   label: string;
   type?: KeyTypes;
+  keyBinding?: string;
 }
 
 export interface UseKeypadProps {
@@ -101,18 +104,33 @@ const simple = [
   {
     value: "=",
     label: "=",
-    type: KeyTypes.FUNCTION
+    type: KeyTypes.FUNCTION,
+    keyBinding: "Enter"
   },
   {
     value: "AC",
     label: "AC",
-    type: KeyTypes.FUNCTION
+    type: KeyTypes.FUNCTION,
+    keyBinding: "Backspace"
   }
 ];
 
 const useKeypad = ({
   onInput = () => undefined
 }: UseKeypadProps): UseKeypad => {
+  useKeyPress(
+    (event) =>
+      simple.some((i) => i.keyBinding === event.key || i.value === event.key),
+    (event) => {
+      const key = simple.find(
+        (i) => i.keyBinding === event.key || i.value === event.key
+      );
+      if (key) {
+        onInput(key);
+      }
+    }
+  );
+
   return {
     handleClick: (value) => () => {
       onInput(value);
