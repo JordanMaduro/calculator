@@ -8,3 +8,4 @@ An over-engineered react calculator for fun and practice.
 - [ ] History
 - [ ] Keyboard input
 - [ ] Multiple Types
+- [ ] Reducer based inner state
