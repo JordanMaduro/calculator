@@ -9,3 +9,5 @@ An over-engineered react calculator for fun and practice.
 - [ ] Keyboard input
 - [ ] Multiple Types
 - [ ] Reducer based inner state
+- [ ] Block invalid input
+- [ ] Error Messages
