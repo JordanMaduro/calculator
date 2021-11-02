@@ -14,3 +14,6 @@ An over-engineered react calculator for fun and practice.
 - [ ] Reducer based inner state
 - [ ] Block invalid input
 - [ ] Error Messages
+- [ ] PWA
+  - [ ] Responsive on small screens
+  - [ ] Offline mode
