@@ -1,4 +1,4 @@
-import { KeyTypes } from "../../keypad/hooks/use-keypad";
+import { KeyTypes } from "../../keypad/keypad.typing";
 import {
   availableFunctions,
   isAvailableFunction,

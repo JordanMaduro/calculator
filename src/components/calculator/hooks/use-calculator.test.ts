@@ -1,6 +1,6 @@
 import { renderHook, act } from "@testing-library/react-hooks";
 import { useCalculator } from ".";
-import { KeyTypes } from "../../keypad/hooks/use-keypad";
+import { KeyTypes } from "../../keypad/keypad.typing";
 
 describe("useCalculator", () => {
   describe("value", () => {

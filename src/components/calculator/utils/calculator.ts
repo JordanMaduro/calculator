@@ -1,5 +1,5 @@
 import { evaluate } from "mathjs";
-import { Key, KeyTypes } from "../../keypad/hooks/use-keypad";
+import { Key, KeyTypes } from "../../keypad/keypad.typing";
 
 export const availableFunctions: Record<
   string,
