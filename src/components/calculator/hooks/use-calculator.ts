@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Key } from "../../keypad/hooks/use-keypad";
+import { Key } from "../../keypad/keypad.typing";
 import { processInput } from "../utils/calculator";
 
 export interface UseCalculator {
