@@ -27,7 +27,9 @@ const useCalculator = (): UseCalculator => {
         if (nextValue !== null) {
           setCurrentValue(nextValue);
         }
-      } catch (e) {}
+      } catch (e) {
+        // intentionally empty
+      }
     }
   };
 };
