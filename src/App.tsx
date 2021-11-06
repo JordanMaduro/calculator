@@ -3,8 +3,8 @@ import { Calculator } from "./components/calculator";
 
 function App() {
   return (
-    <div className="flex justify-center md:pt-8 h-screen bg-gray-100">
-      <div className="w-full md:w-64">
+    <div className="flex justify-center w-screen h-screen bg-gray-200">
+      <div className="lg:py-20 w-screen lg:w-96 h-screen">
         <Calculator />
       </div>
     </div>

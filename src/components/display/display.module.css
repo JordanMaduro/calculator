@@ -1,0 +1,15 @@
+.container {
+  @apply flex flex-col justify-between h-2/5;
+}
+
+.textArea {
+  @apply text-right p-8;
+}
+
+.subText {
+  @apply text-xl;
+}
+
+.text {
+  @apply text-5xl font-bold;
+}

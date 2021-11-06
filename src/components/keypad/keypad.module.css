@@ -1,0 +1,11 @@
+.container {
+  @apply rounded-3xl h-3/5 px-4 pt-4 pb-8 font-bold dark:bg-gray-800 bg-gray-100 grid grid-cols-4;
+}
+
+.key {
+  @apply flex justify-center items-center text-2xl cursor-pointer select-none;
+}
+
+.operation {
+  @apply dark:text-red-600 text-blue-400;
+}

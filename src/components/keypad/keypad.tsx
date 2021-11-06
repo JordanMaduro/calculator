@@ -1,6 +1,9 @@
+import classNames from "classnames";
 import React, { FC } from "react";
 import { useKeypad } from "./hooks";
 import { UseKeypadProps } from "./hooks/use-keypad";
+import classes from "./keypad.module.css";
+import { KeyTypes } from "./keypad.typing";
 
 export interface KeypadProps {
   onInput?: UseKeypadProps["onInput"];
@@ -12,14 +15,16 @@ const Keypad: FC<KeypadProps> = ({ onInput }) => {
   });
 
   return (
-    <div className="grid grid-cols-4">
+    <div className={classNames(classes.container)}>
       {keys.map((key) => (
         <div
-          className=" p-2 text-2xl text-center shadow-sm active:shadow cursor-pointer select-none"
+          className={classNames(classes.key, {
+            [classes.operation]: key.type === KeyTypes.FUNCTION
+          })}
           key={key.value}
           onClick={handleClick(key)}
         >
-          {key.label}
+          <div>{key.label}</div>
         </div>
       ))}
     </div>

@@ -1,0 +1,15 @@
+.root {
+  @apply flex justify-center m-4;
+}
+
+.pill {
+  @apply flex text-2xl font-extrabold bg-gray-100 dark:bg-gray-800 rounded-xl;
+}
+
+.icon {
+  @apply px-4 py-2;
+}
+
+.disabled {
+  @apply text-gray-400;
+}

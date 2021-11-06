@@ -1,0 +1,6 @@
+.calculator {
+  @apply lg:rounded-3xl bg-gray-50 dark:bg-gray-900 dark:text-white text-black tracking-widest h-full w-full;
+}
+.wrapper {
+  @apply w-full h-full;
+}
