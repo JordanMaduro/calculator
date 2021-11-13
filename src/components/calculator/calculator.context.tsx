@@ -9,7 +9,7 @@ import React, {
 // Find a better way to initialize createContext
 export const calculatorContext = createContext({
   mode: false,
-  setMode: (newState: boolean) => {}
+  setMode: (_: boolean) => {}
 });
 
 export const CalculatorProvider: FC = ({ children }) => {
