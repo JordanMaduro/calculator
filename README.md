@@ -5,6 +5,7 @@ An over-engineered react calculator for fun and practice.
 ## Features:
 
 - [x] Keyboard input
+- [x] Scaling text
 
 ## Upcoming features:
 
