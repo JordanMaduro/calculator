@@ -1,7 +1,7 @@
 {
   "name": "calculator-mania",
   "description": "Simple calculator",
-  "version": "0.1.3",
+  "version": "0.0.0",
   "homepage": "http://JordanMaduro.github.io/calculator",
   "private": true,
   "scripts": {
