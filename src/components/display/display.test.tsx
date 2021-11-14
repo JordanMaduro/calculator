@@ -13,9 +13,6 @@ describe("Display", () => {
     });
 
     const { container } = render(<Display text={""} />);
-
-    // expect(container).toEqual("1/4")
-
     expect(container).toHaveTextContent("");
   });
   it("should render given value", async () => {
