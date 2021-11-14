@@ -6,15 +6,16 @@ An over-engineered react calculator for fun and practice.
 
 - [x] Keyboard input
 - [x] Scaling text
+- [x] Dark mode
 
 ## Upcoming features:
 
-- [ ] Dark mode
 - [ ] History
 - [ ] Multiple Types
 - [ ] Reducer based inner state
 - [ ] Block invalid input
 - [ ] Error Messages
+- [ ] Persistence
 - [ ] PWA
   - [ ] Responsive on small screens
   - [ ] Offline mode
