@@ -3,5 +3,6 @@
   "name": "The Calcualtor Project",
   "start_url": "index.html",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "version": "0.1.1"
 }
