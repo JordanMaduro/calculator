@@ -1,0 +1,6 @@
+.container {
+  @apply px-12 py-2 flex justify-between;
+}
+.section {
+  @apply flex gap-6;
+}

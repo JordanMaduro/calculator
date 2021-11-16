@@ -8,4 +8,5 @@ export interface Key {
   label: string;
   type?: KeyTypes;
   keyBinding?: string;
+  hidden?: boolean;
 }

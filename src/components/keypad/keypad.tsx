@@ -15,18 +15,22 @@ const Keypad: FC<KeypadProps> = ({ onInput }) => {
   });
 
   return (
-    <div className={classNames(classes.container)}>
-      {keys.map((key) => (
-        <div
-          className={classNames(classes.key, {
-            [classes.operation]: key.type === KeyTypes.FUNCTION
-          })}
-          key={key.value}
-          onClick={handleClick(key)}
-        >
-          <div>{key.label}</div>
-        </div>
-      ))}
+    <div className={classNames(classes.mainContainer)}>
+      <div className={classNames(classes.container)}>
+        {keys
+          .filter((key) => !key.hidden)
+          .map((key) => (
+            <div
+              className={classNames(classes.key, {
+                [classes.operation]: key.type === KeyTypes.FUNCTION
+              })}
+              key={key.value}
+              onClick={handleClick(key)}
+            >
+              <div>{key.label}</div>
+            </div>
+          ))}
+      </div>
     </div>
   );
 };

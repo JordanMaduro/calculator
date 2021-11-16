@@ -1,5 +1,9 @@
+.mainContainer {
+  @apply rounded-3xl relative dark:bg-gray-800 bg-gray-100 h-3/6;
+}
+
 .container {
-  @apply rounded-3xl h-3/5 px-4 pt-4 pb-8 font-bold dark:bg-gray-800 bg-gray-100 grid grid-cols-4;
+  @apply h-full grid grid-cols-4 text-xl;
 }
 
 .key {

@@ -21,6 +21,7 @@
     "release": "standard-version"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.5",
     "ahooks": "^2.10.12",
     "classnames": "^2.3.1",
     "mathjs": "^10.0.0",

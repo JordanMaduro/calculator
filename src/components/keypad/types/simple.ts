@@ -1,5 +1,13 @@
 import { KeyTypes } from "../keypad.typing";
 
+export const backspaceKey = {
+  value: "AC",
+  label: "AC",
+  type: KeyTypes.FUNCTION,
+  keyBinding: "Backspace",
+  hidden: true
+};
+
 export const simple = [
   {
     value: "C",
@@ -86,10 +94,5 @@ export const simple = [
     type: KeyTypes.FUNCTION,
     keyBinding: "Enter"
   },
-  {
-    value: "AC",
-    label: "AC",
-    type: KeyTypes.FUNCTION,
-    keyBinding: "Backspace"
-  }
+  backspaceKey
 ];
